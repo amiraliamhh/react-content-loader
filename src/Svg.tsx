@@ -7,6 +7,8 @@ export default ({
   rtl,
   speed,
   style,
+  minX,
+  minY,
   width,
   height,
   animate,
@@ -31,7 +33,7 @@ export default ({
       style={{ ...style, ...rtlStyle }}
       className={className}
       aria-labelledby={ariaLabel ? ariaLabel : null}
-      viewBox={`0 0 ${width} ${height}`}
+      viewBox={`${minX || 0} ${minY || 0} ${width} ${height}`}
       preserveAspectRatio={preserveAspectRatio}
       {...props}
     >

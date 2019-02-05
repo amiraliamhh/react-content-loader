@@ -4,6 +4,8 @@ export interface IContentLoaderProps {
   children?: React.ReactNode
   className?: string
   height?: number
+  minX?: number
+  minY?: number
   preserveAspectRatio?:
     | 'none'
     | 'xMinYMin meet'
